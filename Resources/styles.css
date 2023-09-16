@@ -1,0 +1,100 @@
+/*General Rules */
+html {
+    font-size: 16px;
+}
+
+/*Header*/
+
+header {
+    height: 3em;
+    color: white;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+}
+
+header .desktopNav {
+    padding-left: 2%;
+    min-width: 25%;
+    max-width: 100%;
+}
+
+header .desktopNav li{
+    padding-left: 2%;
+    display: inline-flex;
+}
+
+.mobileNav {
+    display: none;
+}
+
+/* Body Head */
+
+.head {
+    height: 30em;
+    background-color: lightsalmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head .h1 {
+    height: 20%;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    min-width: 99%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1 h1 {
+    font-size: 4em;
+}
+
+/* Activities Section 1*/
+
+.activitiesOptions {
+    color: white;
+    background-color: lightsalmon;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.activitiesOptions h3 {
+    color: yellow;
+    font-size: 2.5em;
+}
+
+.activitiesPictures {
+    margin-top: 3%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+
+.actpicture {
+    border: 5px solid white;
+    height: 20%;
+    max-width: 30%;
+}
+
+footer {
+    height: 3em;
+    color: white;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+}
+
+footer .desktopNav {
+    padding-left: 2%;
+    min-width: 25%;
+    max-width: 100%;
+}
+
+footer .desktopNav li{
+    padding-left: 2%;
+    dis
