@@ -97,4 +97,5 @@ footer .desktopNav {
 
 footer .desktopNav li{
     padding-left: 2%;
-    dis
+    display: inline-flex;
+}
