@@ -1,6 +1,8 @@
 /*General Rules */
 html {
     font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
 }
 
 /*Header*/
@@ -22,10 +24,35 @@ header .desktopNav {
 header .desktopNav li{
     padding-left: 2%;
     display: inline-flex;
+    text-decoration: underline;
 }
 
-.mobileNav {
-    display: none;
+.desktopNav li a {
+    color: white;
+}
+
+.desktopNav li a:hover {
+    cursor: grab;
+    color: blue;
+}
+
+/* Media query Nav bar */
+
+@media only screen and (max-width: 1555px) {
+
+    header .desktopNav {
+        min-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 420px) and (min-width: 100px) {
+    header {
+        height: 4.5em;
+    }
+
+    header  .desktopNav{
+        font-size: 0.75em;
+    }
 }
 
 /* Body Head */
@@ -54,16 +81,47 @@ header .desktopNav li{
     font-size: 4em;
 }
 
+/* Media query Body Head */
+
+@media only screen and (max-width: 690px) {
+    .head {
+        height: 13em;
+    }
+
+    .head .h1{
+        height: 30%;
+    }
+
+    .h1 h1 {
+       font-size: 3em
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 100px) {
+    .head {
+        height: 15em;
+    }
+
+    .head .h1{
+        height: 40%;
+    }
+
+    .h1 h1 {
+       font-size: 2em
+    }
+}
+
 /* Activities Section 1*/
 
-.activitiesOptions {
+#activitiesOptions {
+    padding: 0 2%;
     color: white;
     background-color: lightsalmon;
     font-size: 1.5em;
     line-height: 1.5;
 }
 
-.activitiesOptions h3 {
+#activitiesOptions h3 {
     color: yellow;
     font-size: 2.5em;
 }
@@ -80,6 +138,176 @@ header .desktopNav li{
     height: 20%;
     max-width: 30%;
 }
+
+/* Media query for Activities Options 1 */
+
+@media only screen and (max-width: 850px) {
+    #activitiesOptions {
+        height: 30em;
+        font-size: 1.25em;
+        line-height: 1.5;
+        padding: 1% 3%;
+    }
+
+    
+
+    #activitiesOptions h3 {
+        font-size: 1.75em;
+    }
+
+    .activitiesPictures {
+        margin-top: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) and (min-width: 100px) {
+    #activitiesOptions {
+        height: 50em;
+    }
+
+    .activitiesPictures{
+        height: 70%;
+        margin-top: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .actpicture {
+        height: 30%;
+        max-width: 100%;
+    }
+
+}
+
+/* Testimony Section 1*/
+
+#testimony {
+    height: 25em;
+    padding-left: 2%;
+    line-height: 1.5;
+    color: yellow;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+}
+
+#testimony h2 {
+    font-size: 3em;
+}
+
+/* Media query for Testimony */
+
+@media only screen and (max-width: 804px) {
+    #testimony {
+        height: 20em;
+    }
+
+    #testimony h2{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 100px) {
+
+}
+
+/* Activities Section 2*/
+
+#moreActivities {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.moreActivitiesPictures {
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20%;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+.moreactpicture {
+    height: 20%;
+    max-width: 25%;
+    border: 5px solid white;
+}
+
+.joinTheFun {
+    height: 60%;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 3;
+}
+
+.joinTheFun h2 {
+    font-size: 3em;
+}
+
+.joinTheFun h3 {
+    font-size: 2.5em;
+}
+
+.joinTheFun img {
+    height: 80%;
+    max-width: 100%;
+}
+
+/* Media query for Activities Options 2 */
+
+@media only screen and (max-width: 1200px) {
+    #moreActivities {
+        height: fit-content;
+    }
+
+    .joinTheFun {
+        height: 50%;
+        max-width: 95%;
+    }
+
+    .joinTheFun h2 {
+        font-size: 2em;
+    }
+    
+    .joinTheFun h3 {
+        line-height: 1;
+        font-size: 1.75em;
+    }
+
+    .joinTheFun img {
+        height: 80%;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 615px) and (min-width: 100px) {
+    #moreActivities {
+        height: 80em;
+    }
+    
+    .moreActivitiesPictures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40%;
+    }
+
+    .moreactpicture {
+        height: 30%;
+        max-width: 70%;
+    }
+}
+
+/* Footer Section 1*/
 
 footer {
     height: 3em;
@@ -98,4 +326,23 @@ footer .desktopNav {
 footer .desktopNav li{
     padding-left: 2%;
     display: inline-flex;
+}
+
+/* Media query Nav bar */
+
+@media only screen and (max-width: 1555px) {
+
+    footer .desktopNav {
+        min-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 420px) and (min-width: 100px) {
+    footer {
+        height: 4.5em;
+    }
+
+    footer  .desktopNav{
+        font-size: 0.75em;
+    }
 }
